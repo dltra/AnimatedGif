@@ -5,11 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="#fff"
-        android:src="@drawable/animated_gif_juggling" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:id="@+id/llayout"/>
+    </ScrollView>
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#fff"-->
+    <!--        android:src="@drawable/animated_gif_juggling" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
